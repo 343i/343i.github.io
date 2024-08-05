@@ -1,130 +1,52 @@
 @import url('https://assets.ubuntu.com/v1/vanilla-framework-version-4.14.0.min.css');
 
-/* Override Markdown styling with Vanilla Framework classes */
+/* Center the content */
 body {
-    font-family: "Ubuntu", sans-serif;
-    line-height: 1.6;
-    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0;
-    padding: 0;
 }
 
+/* Override Markdown styling with Vanilla Framework classes */
 h1 {
-    font-size: 2.25rem;
-    font-weight: 300;
-    line-height: 1.1;
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
+    @extend .p-heading--one;
 }
 
 h2 {
-    font-size: 1.75rem;
-    font-weight: 300;
-    line-height: 1.1;
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
+    @extend .p-heading--two;
 }
 
 h3 {
-    font-size: 1.5rem;
-    font-weight: 300;
-    line-height: 1.1;
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
+    @extend .p-heading--three;
 }
 
 h4 {
-    font-size: 1.25rem;
-    font-weight: 300;
-    line-height: 1.1;
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
+    @extend .p-heading--four;
 }
 
 h5 {
-    font-size: 1rem;
-    font-weight: 300;
-    line-height: 1.1;
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
+    @extend .p-heading--five;
 }
 
 h6 {
-    font-size: 0.875rem;
-    font-weight: 300;
-    line-height: 1.1;
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
+    @extend .p-heading--six;
 }
 
 p {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 1em;
+    @extend .p-text;
 }
 
-ul, ol {
-    margin-bottom: 1em;
-    padding-left: 1.5em;
-}
-
-li {
-    margin-bottom: 0.5em;
+ul {
+    @extend .p-list;
 }
 
 pre, code {
-    background-color: #f5f5f5;
-    border: 1px solid #ddd;
-    padding: 0.5em;
-    border-radius: 4px;
-    margin-bottom: 1em;
-    font-family: "Ubuntu Mono", monospace;
-}
-
-pre {
-    overflow: auto;
-}
-
-blockquote {
-    border-left: 4px solid #ddd;
-    padding-left: 1em;
-    color: #666;
-    margin: 1em 0;
+    @extend .p-code;
 }
 
 hr {
-    border: 0;
-    height: 1px;
-    background: #ddd;
-    margin: 2em 0;
-}
-
-a {
-    color: #0063e7;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 1em;
-}
-
-th, td {
-    border: 1px solid #ddd;
-    padding: 0.5em;
-    text-align: left;
-}
-
-th {
-    background-color: #f5f5f5;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
+    @extend .u-sv1;
 }
