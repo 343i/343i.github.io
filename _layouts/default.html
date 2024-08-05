@@ -4,17 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="https://assets.ubuntu.com/v1/vanilla-framework-version-4.14.0.min.css">
   <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
 </head>
-<body>
-  <header>
-    <h1>{{ site.title }}</h1>
+<body class="p-strip--light">
+  <header class="p-strip--dark">
+    <div class="row">
+      <h1 class="p-heading--one">343i.github.io</h1>
+    </div>
   </header>
-  <main>
-    {{ content }}
+  <main class="p-strip">
+    <div class="row">
+      {{ content }}
+    </div>
   </main>
-  <footer>
-    <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
+  <footer class="p-strip--dark">
+    <div class="row">
+      <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
+    </div>
   </footer>
 </body>
 </html>
