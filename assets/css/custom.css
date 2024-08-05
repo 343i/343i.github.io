@@ -1,0 +1,42 @@
+@import url('https://assets.ubuntu.com/v1/vanilla-framework-version-4.14.0.min.css');
+
+/* Override Markdown styling with Vanilla Framework classes */
+h1 {
+    @extend .p-heading--one;
+}
+
+h2 {
+    @extend .p-heading--two;
+}
+
+h3 {
+    @extend .p-heading--three;
+}
+
+h4 {
+    @extend .p-heading--four;
+}
+
+h5 {
+    @extend .p-heading--five;
+}
+
+h6 {
+    @extend .p-heading--six;
+}
+
+p {
+    @extend .p-text;
+}
+
+ul {
+    @extend .p-list;
+}
+
+pre, code {
+    @extend .p-code;
+}
+
+hr {
+    @extend .u-sv1;
+}
