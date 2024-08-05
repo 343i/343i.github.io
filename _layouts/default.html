@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
+  <title>343i.github.io</title>
   <link rel="stylesheet" href="https://assets.ubuntu.com/v1/vanilla-framework-version-4.14.0.min.css">
   <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
 </head>
@@ -41,13 +41,16 @@
           </nav>
         </div>
       </header>
-  <main class="p-strip">
-    <div class="u-align--center">
-        <div class="row">
-            {{ content }}
+      <div class="p-strip is-shallow">
+        <main class="p-strip">
+          <div class="u-align--left">
+              <div class="row">
+                  {{ content }}
+                </div>
           </div>
-    </div>
-  </main>
+        </main>  
+      </div>
+  
   <footer class="p-strip--dark">
     <div class="row">
       <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
