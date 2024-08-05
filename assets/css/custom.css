@@ -1,42 +1,130 @@
 @import url('https://assets.ubuntu.com/v1/vanilla-framework-version-4.14.0.min.css');
 
 /* Override Markdown styling with Vanilla Framework classes */
+body {
+    font-family: "Ubuntu", sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
 h1 {
-    @extend .p-heading--one;
+    font-size: 2.25rem;
+    font-weight: 300;
+    line-height: 1.1;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
 }
 
 h2 {
-    @extend .p-heading--two;
+    font-size: 1.75rem;
+    font-weight: 300;
+    line-height: 1.1;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
 }
 
 h3 {
-    @extend .p-heading--three;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.1;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
 }
 
 h4 {
-    @extend .p-heading--four;
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.1;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
 }
 
 h5 {
-    @extend .p-heading--five;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.1;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
 }
 
 h6 {
-    @extend .p-heading--six;
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.1;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
 }
 
 p {
-    @extend .p-text;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1em;
 }
 
-ul {
-    @extend .p-list;
+ul, ol {
+    margin-bottom: 1em;
+    padding-left: 1.5em;
+}
+
+li {
+    margin-bottom: 0.5em;
 }
 
 pre, code {
-    @extend .p-code;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 0.5em;
+    border-radius: 4px;
+    margin-bottom: 1em;
+    font-family: "Ubuntu Mono", monospace;
+}
+
+pre {
+    overflow: auto;
+}
+
+blockquote {
+    border-left: 4px solid #ddd;
+    padding-left: 1em;
+    color: #666;
+    margin: 1em 0;
 }
 
 hr {
-    @extend .u-sv1;
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 2em 0;
+}
+
+a {
+    color: #0063e7;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 0.5em;
+    text-align: left;
+}
+
+th {
+    background-color: #f5f5f5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
