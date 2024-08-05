@@ -2,7 +2,8 @@
 
 | tableau | table |
 | ------- | ----- |
-| one | two |
+| <h4>one</h4> | two |
+| [`gnome-shell`](https://github.com/GNOME/gnome-shell/tree/master/data/theme) | ![FilesLight](readme_pics/nautilus-light.png) |
 
 # Ubuntu Yaru theme suite
 
