@@ -1,15 +1,5 @@
 @import url('https://assets.ubuntu.com/v1/vanilla-framework-version-4.14.0.min.css');
 
-/* Center the content */
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-}
-
 /* Override Markdown styling with Vanilla Framework classes */
 h1 {
     @extend .p-heading--one;
